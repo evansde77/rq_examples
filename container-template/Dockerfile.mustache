@@ -1,0 +1,11 @@
+FROM python3.7:latest
+MAINTAINER evansde77@gmail.com
+ADD install_script.sh /opt/install_script.sh
+RUN chmod +x /opt/install_script.sh
+COPY rq_examples-latest.tar.gz /opt/rq_examples-latest.tar.gz
+
+ARG LOCAL_INSTALL=''
+RUN /opt/install_script.sh $LOCAL_INSTALL
+
+
+ENTRYPOINT ["/bin/bash"]

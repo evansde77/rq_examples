@@ -1,0 +1,1 @@
+{"post_script": "post_script.sh", "pre_script": "pre_script.sh", "inclusive": true, "excludes": ["post_script.sh", "post_script.sh", ".dockerstache"]}
